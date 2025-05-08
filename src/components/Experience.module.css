@@ -1,0 +1,48 @@
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.textContainer{
+    height: 80%;
+}
+
+.textContainer3{
+    height: 80%;
+    width: 100%;
+}
+
+.dateLocationContainer{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    color: #666666;
+    margin-top: -20px;
+}
+
+p{
+    color: #666666;
+    font-size: 13px;
+}
+
+@media (min-width: 1921px) {
+
+  
+    .dateLocationContainer{
+        display: flex;
+        justify-content: space-between;
+        width: 50%;
+        color: #666666;
+        font-size: 20px;
+    }
+
+    p{
+        font-size: 20px;
+    }
+
+    
+  }

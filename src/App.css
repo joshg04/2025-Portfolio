@@ -1,0 +1,35 @@
+.flex {
+  display: flex;
+  height: 100vh;        /* Full screen height */
+  width: 100vw;         /* Full screen width */
+  overflow: hidden;     /* Prevent accidental scrollbars */
+  background-color: #fdfaf6
+}
+
+main {
+  padding: 2rem;
+  margin: 0 auto;
+  flex: 1;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  scroll-behaviour: smooth;
+  
+}
+
+.section-content {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 0; /* vertical spacing */
+}
+
+.snap-section{
+  height: 100vh;
+  scroll-snap-align: start;
+}
+
+@media (min-width: 768px) {
+  main {
+    margin-left: 16rem; /* match your sidebar width */
+  }
+}
