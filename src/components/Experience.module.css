@@ -4,24 +4,39 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
+    height: 100%;
 }
 
 .textContainer{
-    height: 80%;
+    display: flex;
+    height: 100%;
+    gap: 2rem;
+    justify-content: space-evenly;
+    transition: background-color 0.4s ease;
 }
 
-.textContainer3{
-    height: 80%;
-    width: 100%;
+.textContainer:hover{
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    padding: 1rem;
 }
 
 .dateLocationContainer{
     display: flex;
     justify-content: space-between;
-    width: 50%;
+    width: 30%;
     color: #666666;
-    margin-top: -20px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.descriptionContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+    height: 100%;
 }
 
 p{
