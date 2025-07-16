@@ -44,7 +44,7 @@ function App() {
       }} />
       <main>
         <div className="section-content">
-          <section id="about" className="snap-section" ref={aboutRef}><About /></section>
+          <section id="about" className="snap-section" ref={aboutRef}><About projectsRef={projectsRef} /></section>
         </div>
         <div className="section-content">
           <section id="projects" className="snap-section" ref={projectsRef}><Projects /></section>

@@ -4,7 +4,7 @@ import { splitText } from "motion-plus"
 import { useEffect, useRef } from "react"
 import profPic from '../assets/Josh1.jpg'
 
-export default function About() {
+export default function About({ projectsRef }) {
     const containerRef = useRef(null)
 
     const line1Ref = useRef(null)
@@ -70,7 +70,19 @@ export default function About() {
                 I'm a software engineer with a passion for learning new technologies and expanding my skillset. My current focus is full-stack web development and game design using Unity. I have hands-on experience building and deploying websites, and I'm actively seeking software engineering roles where I can contribute to impactful, user-centered products.
             </h5>
             <div className={styles.buttonContainer}>
-            <a ref={line4Ref} href="#projects" className={styles.abtBtn}>Check out what I have to offer!</a>
+            <a
+  ref={line4Ref}
+  href="#projects"
+  className={styles.abtBtn}
+  onClick={e => {
+    e.preventDefault();
+    if (projectsRef && projectsRef.current) {
+      projectsRef.current.scrollIntoView({ behavior: 'smooth' });
+    }
+  }}
+>
+  Check out what I have to offer!
+</a>
             <a ref={line5Ref} href="../../public/Resume - Joshua Gutierrez.pdf" download className={styles.abtBtn}>Download my Resumé</a>
             </div>
 
