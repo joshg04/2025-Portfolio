@@ -9,6 +9,12 @@
 .vidContainer{
     display: flex;
     gap: 1rem;
+    transition: box-shadow 0.2s ease;
+}
+
+.vidContainer:hover{
+    box-shadow: 0 4px 16px 0 rgba(60, 60, 60, 0.18);
+    border-radius: 10px;
 }
 
 .vidItem{

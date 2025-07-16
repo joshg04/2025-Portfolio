@@ -6,6 +6,11 @@ import pokemonVid from '../../public/videos/pokedexProj.mp4'
 export default function Projects () {
     return (
         
+        // Fix spacing for vid, text, and stack
+        // Add hover effect
+        // Link GitHub repos for everything
+        // higher res videos or only video preview when hovering
+        // Brittany Chiang style portfolio (succinct but looks good)
         <div className={styles.sectionContainer}>
         <h1>Projects</h1>
         <div className={styles.container}>
