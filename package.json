@@ -6,7 +6,7 @@
   "homepage": "https://joshg04.github.io/2025-Portfolio/",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build --outDir docs",
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
