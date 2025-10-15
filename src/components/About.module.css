@@ -40,6 +40,61 @@
     will-change: transform, opacity;
 }
 
+/* Mobile styles */
+@media (max-width: 767px) {
+    .container {
+        gap: 1.5rem;
+    }
+    
+    .container h1 {
+        font-size: 48px;
+        line-height: 1.1;
+        margin-bottom: 1rem;
+    }
+    
+    .container h5 {
+        font-size: 18px;
+        line-height: 1.5;
+        margin-bottom: 1.5rem;
+    }
+    
+    .buttonContainer {
+        flex-direction: column;
+        gap: 1.5rem;
+        width: 100%;
+        margin-top: 1rem;
+    }
+    
+    .abtBtn {
+        padding: 1rem 1.5rem;
+        text-align: center;
+        width: 100%;
+        box-sizing: border-box;
+        font-size: 16px;
+        font-weight: 600;
+    }
+}
+
+/* Tablet styles */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .container h1 {
+        font-size: 48px;
+    }
+    
+    .container h5 {
+        font-size: 14px;
+    }
+    
+    .buttonContainer {
+        gap: 1.5rem;
+    }
+    
+    .abtBtn {
+        padding: 0.6rem 1rem;
+    }
+}
+
+/* Desktop styles - preserving existing */
 @media (min-width: 1921px) {
     .container h5{
         font-size: 20px;

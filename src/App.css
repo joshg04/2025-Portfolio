@@ -12,7 +12,7 @@ main {
   flex: 1;
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
-  scroll-behaviour: smooth;
+  scroll-behavior: smooth;
   
 }
 
@@ -28,6 +28,44 @@ main {
   scroll-snap-align: start;
 }
 
+/* Mobile styles */
+@media (max-width: 767px) {
+  .flex {
+    flex-direction: column;
+  }
+  
+  main {
+    padding: 1.5rem;
+    margin-left: 0;
+    height: 100vh; /* Full height since burger menu doesn't take space */
+  }
+  
+  .section-content {
+    width: 95%;
+    padding: 3rem 0;
+  }
+  
+  .snap-section {
+    height: auto;
+    min-height: 100vh;
+    scroll-snap-align: none;
+  }
+}
+
+/* Tablet styles */
+@media (min-width: 768px) and (max-width: 1024px) {
+  main {
+    margin-left: 12rem;
+    padding: 1.5rem;
+  }
+  
+  .section-content {
+    width: 92%;
+    padding: 3rem 0;
+  }
+}
+
+/* Desktop styles - preserving existing */
 @media (min-width: 768px) {
   main {
     margin-left: 16rem; /* match your sidebar width */

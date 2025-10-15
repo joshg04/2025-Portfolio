@@ -1,8 +1,8 @@
 import styles from './About.module.css'
+import resumePDF from '../assets/Resume - Joshua Gutierrez.pdf'
 import { animate, stagger } from "motion"
 import { splitText } from "motion-plus"
 import { useEffect, useRef } from "react"
-import profPic from '../assets/Josh1.jpg'
 
 export default function About({ projectsRef }) {
     const containerRef = useRef(null)
@@ -67,7 +67,7 @@ export default function About({ projectsRef }) {
             <h5 ref={line1Ref}>Hi, my name is</h5>
             <h1 ref={line2Ref}>Joshua Gutierrez.</h1>
             <h5 ref={line3Ref}>
-                I'm a software engineer with a passion for learning new technologies and expanding my skillset. My current focus is full-stack web development and game design using Unity. I have hands-on experience building and deploying websites, and I'm actively seeking software engineering roles where I can contribute to impactful, user-centered products.
+                I'm a software engineer with a passion for learning new technologies and expanding my skillset. My current focus is full-stack web development using React, Node, and PostgreSQL. I have hands-on experience building and deploying websites, and I'm actively seeking software engineering roles where I can contribute to impactful, user-centered products.
             </h5>
             <div className={styles.buttonContainer}>
             <a
@@ -83,7 +83,14 @@ export default function About({ projectsRef }) {
 >
   Check out what I have to offer!
 </a>
-            <a ref={line5Ref} href="../../public/Resume - Joshua Gutierrez.pdf" download className={styles.abtBtn}>Download my Resumé</a>
+            <a 
+                ref={line5Ref} 
+                href={resumePDF} 
+                download="Joshua-Gutierrez-Resume.pdf"
+                className={styles.abtBtn}
+            >
+                Download my Resumé
+            </a>
             </div>
 
         </div>

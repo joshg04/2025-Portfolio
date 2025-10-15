@@ -1,6 +1,6 @@
 import styles from './Projects.module.css'
-import musicVid from '../../public/videos/musicApp.mp4'
-import pokemonVid from '../../public/videos/pokedexProj.mp4'
+import musicVid from '/videos/musicApp.mp4'
+import pokemonVid from '/videos/pokedexProj.mp4'
 
 
 export default function Projects () {

@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react'
 import './App.css'
-import Sidebar from './components/sidebar'
+import Sidebar from './components/Sidebar'
 import About from './components/About';
 import Projects from './components/Projects';
 import Experience from './components/Experience';
